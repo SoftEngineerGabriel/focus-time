@@ -6,15 +6,17 @@
     <title>FocusTime</title>
     <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-svg">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-        <!-- <button id="toggle-mode">
-            <span>Ativar/desativar light mode</span>
+        
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar light mode!</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
-        </button> -->
+        </button> 
 
         <section id="timer" class="flex">
             <span id="minutes">00</span>
@@ -24,11 +26,17 @@
 
         <sections id="controls" class="flex">
             <button class="ph ph-play-circle"></button>
+                <span class="sr-only">Iniciar contador</span>
             <button class="ph ph-pause-circle"></button>
+                <span class="sr-only">Pausar contador</span>
             <button class="ph ph-timer secondary"></button>
+                <span class="sr-only">Ajusar contador</span>
             <button class="ph ph-stop-circle secondary"></button>
+                <span class="sr-only">Reiniciar contador</span>
             <button class="ph ph-speaker-none secondary"></button>
+                <span class="sr-only">Iniciar musica</span>
             <button class="ph ph-speaker-high"></button>
+                <span class="sr-only">Pausar musica</span>
         </sections>
     </div>
 </body>
